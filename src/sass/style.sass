@@ -3,11 +3,28 @@
 *
   box-sizing: border-box
 
+@font-face 
+  font-family: "MontsseratT"
+  src: url('../fonts/Montserrat-Regular.ttf')
+  font-weight: regular
+  font-style: normal
+
+@font-face 
+  font-family: "MontsseratT"
+  src: url('../fonts/Montserrat-SemiBold.ttf')
+  font-weight: bold
+  font-style: normal
+
+html
+  font-family: "MontsseratT"
+  font-weight: normal
+
 $color-blue: #5290EA
 $color-orange: #F28B64
 $color-gray:#E2E2E2
 
 .container
+  position: relative
   max-width: 1140px
   margin: 0 auto
 
@@ -45,8 +62,13 @@ $color-gray:#E2E2E2
   &__item
     margin-right: 64px
     font-size: 18px
+    font-weight: bold
     &:last-child
       margin-right: 0
+    a
+      text-decoration: none
+      color: black
+
 
 .left-wrapper
   position: relative
@@ -121,6 +143,7 @@ $color-gray:#E2E2E2
 .title
   font-size: 72px
   position: relative
+  font-weight: bold
   &__hr
     width: 65px
     position: absolute
@@ -141,6 +164,7 @@ $color-gray:#E2E2E2
     border: none
     font-size: 18px
     color: white
+    font-weight: bold
   &__icon-btn
     display: inline-flex
     align-items: center
@@ -148,6 +172,7 @@ $color-gray:#E2E2E2
       margin-right: 12px
   &__text
     font-size: 16px
+    
 
 .elipse
   width: 194px
@@ -175,7 +200,6 @@ $color-gray:#E2E2E2
     display: inline-flex
     margin-bottom: 25px
   &__container
-    position: relative
     padding-top: 32px
   &__title
     margin-bottom: 40px
@@ -211,6 +235,7 @@ $color-gray:#E2E2E2
   &__text
     width: 280px
     font-size: 36px
+    font-weight: bold
     text-align: center
     transform: rotate(90deg)
     position: absolute
@@ -233,3 +258,57 @@ $color-gray:#E2E2E2
     font-size: 18px
     span
       font-size: 48px
+      font-weight: bold
+
+.third-section
+  position: relative
+  overflow: hidden
+  min-height: 640px
+  background-color: #F0F0F0
+  z-index: 0
+  &__container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    padding-left: 167px
+    padding-top: 46px
+  &__rigth-wrapper
+    max-width: 480px
+  &__first-elipse
+    position: absolute
+    top: 140px
+    left: 110px
+    z-index: -1
+  &__figure
+    position: absolute
+    top: 249px
+    left: 15px
+    z-index: -1
+  &__second-elipse
+    position: absolute
+    top: -120px
+    right: -120px
+
+.rigth-wrapper
+  &__title
+    margin-bottom: 20px
+  &__text
+    margin-bottom: 30px
+    font-size: 18px
+
+.title__hr_top
+  margin-bottom: 75px
+
+.footer
+  &__img
+    position: absolute
+    left: -250px
+    bottom: 0
+  &__container
+    min-height: 272px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &__title
+    margin-bottom: 20px

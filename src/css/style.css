@@ -365,7 +365,25 @@ table {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MontsseratT";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontsseratT";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-family: "MontsseratT";
+  font-weight: normal;
+}
+
 .container {
+  position: relative;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -410,9 +428,14 @@ table {
 .nav-menu__item {
   margin-right: 64px;
   font-size: 18px;
+  font-weight: bold;
 }
 .nav-menu__item:last-child {
   margin-right: 0;
+}
+.nav-menu__item a {
+  text-decoration: none;
+  color: black;
 }
 
 .left-wrapper {
@@ -501,6 +524,7 @@ table {
 .title {
   font-size: 72px;
   position: relative;
+  font-weight: bold;
 }
 .title__hr {
   width: 65px;
@@ -524,6 +548,7 @@ table {
   border: none;
   font-size: 18px;
   color: white;
+  font-weight: bold;
 }
 .buttons__icon-btn {
   display: inline-flex;
@@ -568,7 +593,6 @@ table {
   margin-bottom: 25px;
 }
 .second-section__container {
-  position: relative;
   padding-top: 32px;
 }
 .second-section__title {
@@ -612,6 +636,7 @@ table {
 .cards-item__text {
   width: 280px;
   font-size: 36px;
+  font-weight: bold;
   text-align: center;
   transform: rotate(90deg);
   position: absolute;
@@ -640,4 +665,68 @@ table {
 }
 .icons-item__text span {
   font-size: 48px;
+  font-weight: bold;
+}
+
+.third-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 640px;
+  background-color: #F0F0F0;
+  z-index: 0;
+}
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 167px;
+  padding-top: 46px;
+}
+.third-section__rigth-wrapper {
+  max-width: 480px;
+}
+.third-section__first-elipse {
+  position: absolute;
+  top: 140px;
+  left: 110px;
+  z-index: -1;
+}
+.third-section__figure {
+  position: absolute;
+  top: 249px;
+  left: 15px;
+  z-index: -1;
+}
+.third-section__second-elipse {
+  position: absolute;
+  top: -120px;
+  right: -120px;
+}
+
+.rigth-wrapper__title {
+  margin-bottom: 20px;
+}
+.rigth-wrapper__text {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.title__hr_top {
+  margin-bottom: 75px;
+}
+
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0;
+}
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
